@@ -1,0 +1,17 @@
+{
+    "name": "pmvc-theme/pmvc_react_landing",
+    "description": "PMVC Landing Theme",
+    "type": "library",
+    "keywords": ["landing", "theme", "pmvc", "react"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hill",
+            "email": "hill@kimo.com"
+        }
+    ],
+    "require": {
+        "pmvc-plugin/view_react": "*"
+    },
+    "minimum-stability": "dev"
+}

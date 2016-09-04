@@ -1,0 +1,23 @@
+{
+  "name": "pmvc_react_landing",
+  "version": "0.0.0",
+  "description": "A very simple implementation of server-side React rendering",
+  "main": "./src/index.js",
+  "repository": "pmvc/react-atomic-ui",
+  "keywords": [
+    "react",
+    "reactjs"
+  ],
+  "author": "Hill <hill@kimo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react-atomic-molecule": "^0.0.23"
+  },
+  "devDependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "webpack": "^1.13.0",
+    "babel-core": "^5.x",
+    "babel-loader": "^5.x"
+  }
+}
