@@ -3,3 +3,5 @@ npm-debug.log
 coverage*
 .php_cs.cache
 .*.sw?
+build
+assets

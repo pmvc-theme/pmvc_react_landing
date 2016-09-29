@@ -11,8 +11,9 @@ production(){
 
 develop(){
     echo "Develop Mode";
-    PHP_CONFIG=$phpc webpack
-    webpack --config webpack.node.js
+    npm run build
+    #PHP_CONFIG=$phpc webpack
+    #webpack --config webpack.node.js
 }
 
 case "$1" in
