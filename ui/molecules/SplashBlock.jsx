@@ -1,21 +1,35 @@
 import React, {Component} from 'react'; 
-import { SemanticUI,assign } from 'react-atomic-molecule';
+import { SemanticUI, assign } from 'react-atomic-molecule';
 
-const ContentBlock = (props) => (
+const SplashBlock = (props) => (
     <SemanticUI
         atom="section"
-        className="content"
+        className="splash-block"
         {...props}
         style={assign(Styles.block,props.style)}
-    />
+    >
+        <SemanticUI className="splash" style={Styles.insideContainer}>
+            {props.children}
+        </SemanticUI>
+    </SemanticUI>
 );
 
-export default ContentBlock;
+export default SplashBlock;
 
 const Styles = {
     block: {
-        margin:'0 auto 100px',
+        margin:'0',
+        padding: '0',
+        zIndex: 1,
+        position: 'fixed',
+        width: '100%',
+        height: '100%',
+    },
+    insideContainer: {
         maxWidth: '800px',
-        padding: '0 10px'
+        width: '100%',
+        margin: '100px auto 0',
+        height: '80%',
+        textAlign: 'center',
     }
 };

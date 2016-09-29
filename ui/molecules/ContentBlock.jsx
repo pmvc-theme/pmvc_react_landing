@@ -4,9 +4,9 @@ import { SemanticUI,assign } from 'react-atomic-molecule';
 const ContentBlock = (props) => (
     <SemanticUI
         atom="section"
-        className="content"
+        className="content-block"
         {...props}
-        style={assign(Styles.block,props.style)}
+        style={assign({},Styles.block,props.style)}
     />
 );
 

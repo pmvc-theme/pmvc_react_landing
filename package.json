@@ -1,9 +1,9 @@
 {
   "name": "pmvc_react_landing",
   "version": "0.0.0",
-  "description": "A very simple implementation of server-side React rendering",
+  "description": "PMVC Theme for landing",
   "main": "./src/index.js",
-  "repository": "pmvc/react-atomic-ui",
+  "repository": "pmvc-theme/pmvc_react_landing",
   "keywords": [
     "react",
     "reactjs"
