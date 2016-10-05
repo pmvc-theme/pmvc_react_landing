@@ -1,4 +1,4 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import { SemanticUI,assign } from 'react-atomic-molecule';
 
 const ContentWrapper = (props) => (
@@ -14,9 +14,11 @@ export default ContentWrapper;
 const Styles = {
     container: {
         position: 'absolute',
+        overflow: 'hidden',
         top: '87%',
-        width: '100%',
-        zIndex: 2,
+        right:0,
+        left: 0,
+        zIndex: 1,
         minHeight: '30%',
         background: 'white'
     }

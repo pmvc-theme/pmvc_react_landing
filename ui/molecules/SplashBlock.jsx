@@ -1,4 +1,4 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import { SemanticUI, assign } from 'react-atomic-molecule';
 
 const SplashBlock = (props) => (
@@ -6,9 +6,11 @@ const SplashBlock = (props) => (
         atom="section"
         className="splash-block"
         {...props}
-        style={assign(Styles.block,props.style)}
+        style={assign({},Styles.block,props.style)}
     >
-        <SemanticUI className="splash" style={Styles.insideContainer}>
+        <SemanticUI
+            className="splash"
+            style={Styles.insideContainer}>
             {props.children}
         </SemanticUI>
     </SemanticUI>
@@ -20,14 +22,16 @@ const Styles = {
     block: {
         margin:'0',
         padding: '0',
-        zIndex: 1,
+        zIndex: 0,
         position: 'fixed',
-        width: '100%',
-        height: '100%',
+        overflow: 'hidden',
+        top:0,
+        right:0,
+        bottom:0,
+        left:0,
     },
     insideContainer: {
         maxWidth: '800px',
-        width: '100%',
         margin: '100px auto 0',
         height: '80%',
         textAlign: 'center',

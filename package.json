@@ -1,6 +1,6 @@
 {
   "name": "pmvc_react_landing",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "PMVC Theme for landing",
   "main": "./build/src/index.js",
   "repository": "pmvc-theme/pmvc_react_landing",
@@ -11,7 +11,7 @@
   "author": "Hill <hill@kimo.com>",
   "license": "MIT",
   "dependencies": {
-    "react-atomic-molecule": "^0.0.23"
+    "react-atomic-molecule": "^0.0.30"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",

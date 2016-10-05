@@ -5,3 +5,4 @@ export { default as OneColumn } from '../ui/templates/OneColumn';
 export { default as ContentBlock } from '../ui/molecules/ContentBlock';
 export { default as ContentWrapper } from '../ui/molecules/ContentWrapper';
 export { default as SplashBlock } from '../ui/molecules/SplashBlock';
+export { default as PageHeader } from '../ui/molecules/PageHeader';
