@@ -32,7 +32,7 @@ const Styles = {
     },
     insideContainer: {
         maxWidth: '800px',
-        margin: '100px auto 0',
+        margin: '6.875rem auto 0',
         height: '80%',
         textAlign: 'center',
     }

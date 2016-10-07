@@ -1,11 +1,15 @@
 import React from 'react'; 
-import { assign, SemanticUI } from 'react-atomic-molecule';
+import { assign, mixClass, SemanticUI } from 'react-atomic-molecule';
 
 const PageHeader = (props) => {
+    const classes = mixClass(
+        props.className,
+        'page-header'
+    );
     return (
         <SemanticUI 
             {...props}
-            className="page-header"
+            className={classes}
             style={assign(
                 {},
                 Styles.header,
