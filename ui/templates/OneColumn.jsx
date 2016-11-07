@@ -5,10 +5,11 @@ const OneColumn = (props) => {
     let {
         header,
         menu,
+        cover,
         body,
         footer,
-        cover,
-        contentWrapper
+        last,
+        contentWrapper,
     } = props;
     if (cover) {
         body = ( 
@@ -26,6 +27,7 @@ const OneColumn = (props) => {
         {cover}
         {body}
         {footer}
+        {last}
     </div>
     );
 };
