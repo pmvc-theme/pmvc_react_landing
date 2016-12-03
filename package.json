@@ -1,6 +1,6 @@
 {
   "name": "pmvc_react_landing",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "PMVC Theme for landing",
   "main": "./build/src/index.js",
   "repository": "pmvc-theme/pmvc_react_landing",

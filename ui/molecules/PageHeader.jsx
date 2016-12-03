@@ -25,8 +25,9 @@ const Styles = {
     header: {
         background: 'transparent',
         position: 'fixed',
-        zIndex: '2',
+        zIndex: 1,
         left:0,
-        right:0
+        right:0,
+        top:0
     }
 };
