@@ -10,6 +10,7 @@ const OneColumn = (props) => {
         footer,
         last,
         contentWrapper,
+        style,
     } = props;
     if (cover) {
         body = ( 
@@ -21,7 +22,7 @@ const OneColumn = (props) => {
         footer = null;
     }
     return (
-    <div>
+    <div style={style}>
         {header}
         {menu}
         {cover}
