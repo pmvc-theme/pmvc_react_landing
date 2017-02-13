@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { assign, mixClass, SemanticUI } from 'react-atomic-molecule';
+import { mixClass, SemanticUI } from 'react-atomic-molecule';
 
 const PageHeader = (props) => {
     const classes = mixClass(
@@ -10,11 +10,10 @@ const PageHeader = (props) => {
         <SemanticUI 
             {...props}
             className={classes}
-            style={assign(
-                {},
-                Styles.header,
-                props.style
-            )}
+            style={{
+                ...Styles.header,
+                ...props.style
+            }}
         />
     );
 };
