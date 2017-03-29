@@ -22,7 +22,6 @@ const Styles = {
     block: {
         margin:'0',
         padding: '0',
-        zIndex: 0,
         position: 'fixed',
         overflow: 'hidden',
         top:0,

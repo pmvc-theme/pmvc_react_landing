@@ -18,7 +18,7 @@ const Styles = {
         top: '87%',
         right:0,
         left: 0,
-        zIndex: 1,
+        zIndex: 0,
         minHeight: '30%',
         background: 'white'
     }
