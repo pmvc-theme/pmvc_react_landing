@@ -1,12 +1,12 @@
 import React from 'react'; 
-import { SemanticUI, assign } from 'react-atomic-molecule';
+import { SemanticUI } from 'react-atomic-molecule';
 
 const SplashBlock = (props) => (
     <SemanticUI
         atom="section"
         className="splash-block"
         {...props}
-        style={assign({},Styles.block,props.style)}
+        style={{...Styles.block, ...props.style}}
     >
         <SemanticUI
             className="splash"

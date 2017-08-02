@@ -1,11 +1,11 @@
 import React from 'react'; 
-import { SemanticUI,assign } from 'react-atomic-molecule';
+import { SemanticUI } from 'react-atomic-molecule';
 
 const ContentWrapper = (props) => (
     <SemanticUI
         className="content-wrapper"
         {...props}
-        style={assign({},Styles.container,props.style)}
+        style={{...Styles.container, ...props.style}}
     />
 );
 
