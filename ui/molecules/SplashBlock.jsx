@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React, {Children, cloneElement} from 'react'; 
 import { SemanticUI } from 'react-atomic-molecule';
 
 const SplashBlock = (props) => (
@@ -11,7 +11,7 @@ const SplashBlock = (props) => (
         <SemanticUI
             className="splash"
             style={Styles.insideContainer}>
-            {props.children}
+            {Children.map( props.children, (child, key) => cloneElement(child, {key}))}
         </SemanticUI>
     </SemanticUI>
 );
