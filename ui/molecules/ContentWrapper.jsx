@@ -15,7 +15,7 @@ const Styles = {
     container: {
         position: 'absolute',
         overflow: 'hidden',
-        top: '87%',
+        top: '100vh',
         right:0,
         left: 0,
         zIndex: 0,
