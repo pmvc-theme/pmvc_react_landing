@@ -1,13 +1,22 @@
 import React from 'react'; 
 import { SemanticUI } from 'react-atomic-molecule';
 
-const ContentWrapper = (props) => (
+const ContentWrapper = ({style, background, ...props}) => { 
+    if (background) {
+        style.background = background
+    }
+    return (
     <SemanticUI
         className="content-wrapper"
         {...props}
-        style={{...Styles.container, ...props.style}}
+        style={{...Styles.container, ...style}}
     />
-);
+    )
+}
+
+ContentWrapper.defaultProps = {
+    background: 'white'
+}
 
 export default ContentWrapper;
 
@@ -19,7 +28,6 @@ const Styles = {
         right:0,
         left: 0,
         zIndex: 0,
-        minHeight: '30%',
-        background: 'white'
+        minHeight: '30%'
     }
 };
