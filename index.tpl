@@ -1,4 +1,4 @@
-<head><script defer src="/assets/main.bundle.js"></script><script defer src="/assets/lib.bundle.js"></script><script defer src="/assets/vendor.bundle.js"></script><script defer src="/assets/main.bundle.js"></script></head>Html Webpack Plugin:
+<head><script defer src="/assets/main.bundle.js"></script></head>Html Webpack Plugin:
 <pre>
   Error: Child compilation failed:
   Module not found: Error: Can't resolve '/Users/hill/git/pmvc_react_landing/index.tpl' in '/Users/hill/git/pmvc_react_landing'
